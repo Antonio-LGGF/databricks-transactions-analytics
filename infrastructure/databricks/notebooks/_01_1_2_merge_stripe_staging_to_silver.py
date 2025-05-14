@@ -1,3 +1,16 @@
+"""
+Notebook: Merge Stripe Staging to Silver
+
+Purpose:
+- Read ingested Stripe data from the 'bronze' layer
+- Apply transformations: parsing, deduplication, type casting
+- Write clean data to the 'silver' layer
+
+Assumptions:
+- Input data is already ingested from S3
+- No schema evolution needed at this stage
+"""
+
 # COMMAND ----------
 # 0.0 
 # Import required Spark functions and types

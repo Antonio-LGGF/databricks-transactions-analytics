@@ -1,3 +1,18 @@
+"""
+Notebook: Ingest PayPal Data to Bronze
+
+Purpose:
+- Read PayPal transaction data from S3 (JSONL format)
+- Store raw input into the Databricks 'bronze' layer
+
+Data Source:
+- Files matching: paypal_transactions_*.jsonl
+- Loaded from S3 via AWS credentials
+
+Security:
+- Uses secret scope 's3-creds' for AWS access
+"""
+
 # COMMAND ----------
 # 0.0 
 # Import required Spark functions and types

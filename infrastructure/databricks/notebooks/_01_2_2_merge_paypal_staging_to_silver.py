@@ -1,3 +1,19 @@
+"""
+Notebook: Merge PayPal Staging to Silver
+
+Purpose:
+- Load PayPal bronze data from Delta Lake
+- Clean and transform the dataset
+- Write clean output to the 'silver' layer
+
+Operations:
+- Remove nulls, enforce schema
+- Optional filtering or normalization
+
+Output:
+- Silver Delta table for downstream processing
+"""
+
 # COMMAND ----------
 # 0.0 
 # Import required Spark functions and types

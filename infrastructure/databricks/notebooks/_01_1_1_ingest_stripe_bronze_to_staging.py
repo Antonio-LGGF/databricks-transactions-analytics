@@ -1,3 +1,19 @@
+"""
+Notebook: Ingest Stripe Data to Bronze
+
+Purpose:
+- Load raw Stripe transaction files from S3
+- Write data to Databricks 'bronze' layer
+- Schema is inferred from JSONL input
+- Expects files like: stripe_transactions_*.jsonl
+
+Data Source:
+- S3 bucket provided in mount or path
+
+Security:
+- AWS credentials loaded from Databricks secret scope 's3-creds'
+"""
+
 # COMMAND ----------
 # 0.0 
 # Import required Spark functions and types
