@@ -20,10 +20,13 @@ variable "tags" {
 
 variable "databricks_host" {
   description = "Databricks workspace URL, like https://your-workspace.cloud.databricks.com"
+  type        = string
 }
 
 variable "databricks_token" {
   description = "Databricks personal access token"
+  type        = string
+  sensitive   = true
 }
 
 variable "databricks_user_email" {

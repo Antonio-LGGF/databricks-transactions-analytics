@@ -3,11 +3,11 @@ provider "aws" {
 }
 
 #####################################
-# S3
+# s3
 #####################################
 
 module "s3_bucket" {
-  source = "./S3"
+  source = "./s3"
   # variables:
   bucket_name = local.s3_bucket_name
   tags        = var.tags
